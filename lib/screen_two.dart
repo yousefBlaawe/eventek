@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 class ScreenTwo extends StatelessWidget {
   const ScreenTwo({super.key});
@@ -33,6 +34,8 @@ class ScreenTwo extends StatelessWidget {
                   fontWeight: FontWeight.w800,
                   color: Colors.green,
                 ),
+              ).animate().fade().scale(
+                duration: Duration(milliseconds: 300)
               ),
               const SizedBox(
                 height: 20,
@@ -54,6 +57,8 @@ class ScreenTwo extends StatelessWidget {
                           color: Colors.green,
                           fontSize: 18),
                     )),
+              ).animate().fade().scale(
+                  duration: Duration(milliseconds: 400)
               ),
               const SizedBox(
                 height: 7,
@@ -63,7 +68,7 @@ class ScreenTwo extends StatelessWidget {
                 decoration: InputDecoration(
                     contentPadding: const EdgeInsets.all(22),
                     icon: const Icon(
-                      Icons.phone,
+                      Icons.facebook,
                       color: Colors.green,
                       size: 30,
                     ),
@@ -74,6 +79,8 @@ class ScreenTwo extends StatelessWidget {
                         fontWeight: FontWeight.bold),
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(15))),
+              ).animate().fade().scale(
+                  duration: Duration(milliseconds: 500)
               ),
               const SizedBox(
                 height: 30,
@@ -84,6 +91,8 @@ class ScreenTwo extends StatelessWidget {
                     color: Colors.green,
                     fontWeight: FontWeight.bold,
                     fontSize: 30),
+              ).animate().fade().scale(
+                  duration: Duration(milliseconds: 600)
               ),
               const SizedBox(
                 height: 20,
@@ -104,7 +113,9 @@ class ScreenTwo extends StatelessWidget {
                             fontWeight: FontWeight.bold),
                       ),
                       border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(15)))),
+                          borderRadius: BorderRadius.circular(15)))).animate().fade().scale(
+                  duration: Duration(milliseconds: 700)
+              ),
               const SizedBox(height:8,),
               TextFormField(
                 keyboardType: TextInputType.number,
@@ -128,6 +139,8 @@ class ScreenTwo extends StatelessWidget {
 
                   ),
 
+              ).animate().fade().scale(
+                  duration: Duration(milliseconds: 800)
               ),
               const SizedBox(height: 30,),
               Row(
@@ -173,6 +186,8 @@ class ScreenTwo extends StatelessWidget {
                         ),
                       )),
                 ],
+              ).animate().fade().scale(
+                  duration: Duration(milliseconds: 900)
               ),
               const SizedBox(height: 20,),
               Container(
@@ -193,7 +208,10 @@ class ScreenTwo extends StatelessWidget {
                   ),
                 ),
 
-              )
+              ).animate().fade().scale(
+                  duration: Duration(milliseconds: 1000)
+              ),
+
 
             ],
           ),
