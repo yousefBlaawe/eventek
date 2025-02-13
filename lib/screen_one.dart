@@ -22,28 +22,42 @@ class ScreenOne extends StatelessWidget
           }, icon: Icon(Icons.access_alarm_sharp))
         ],
       ) ,
-      body: Container(
-        width: double.infinity,
-        color: Colors.yellowAccent,
-        child: Column(
+      body: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
           children: [
 
-            Expanded(
-              child: Container(
-                color: Colors.green,
-                height: 50,
-                width: 50,
-              ),
+            Container(
+              color: Colors.green,
+              height: 200,
+              width: 200,
             ),
-            Expanded(
-              child: Container(
-                height: 50,
-                width: 50,
-                color: Colors.yellow,
-              ),
-            )
+            Container(
+              height: 200,
+              width: 200,
+              color: Colors.yellow,
+            ),
+            Container(
+              color: Colors.green,
+              height: 200,
+              width: 50,
+            ),
+            Container(
+              height: 200,
+              width: 50,
+              color: Colors.yellow,
+            ), Container(
+              color: Colors.green,
+              height: 200,
+              width: 50,
+            ),
+            Container(
+              height: 200,
+              width: 50,
+              color: Colors.yellow,
+            ),
           ],
-        )
+        ),
       ),
     );
   }
