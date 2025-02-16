@@ -112,8 +112,13 @@ class ScreenTwo extends StatelessWidget {
                             fontSize: 18,
                             fontWeight: FontWeight.bold),
                       ),
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(15)))).animate().fade().scale(
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.blue
+                        )
+                      ),
+                      focusedBorder: OutlineInputBorder(),
+                     )).animate().fade().scale(
                   duration: Duration(milliseconds: 700)
               ),
               const SizedBox(height:8,),

@@ -1,5 +1,4 @@
-import 'package:eventek_layth/screen_one.dart';
-import 'package:eventek_layth/screen_two.dart';
+import 'package:eventek_layth/screen_three/screen_three.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -10,9 +9,9 @@ class MyApp extends StatelessWidget
 {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ScreenTwo(),
+      home: ScreenThree(),
     );
   }
 
