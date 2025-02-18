@@ -299,7 +299,7 @@ class ScreenThree extends StatelessWidget {
             children: [
               const CircleAvatar(
                 radius: 50,
-                backgroundColor: Colors.black,
+                backgroundImage:AssetImage('assets/images/yousef_image.jpg') ,
               ),
               const Text(
                 'Yousef Blaawe',
